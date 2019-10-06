@@ -1,20 +1,14 @@
-  <nav class="navbar navbar-light" style="color:#000;">
-    <a class="navbar-brand" href="#">PetitsPains</a>
-    <ul class="nav justify-content-center">
-        <li class="nav-item">
-          <a class="nav-link" routerLink="home">BreakFast</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="team">Teams</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="member">Members</a>
-        </li>
-      </ul>
 
-      <button class="btn btn-dark" routerLink="login">Login</button>
-  </nav>
+<mat-toolbar color="primary" class="navbar" style="box-shadow: 0 2px 30px -2px rgba(0,0,0,.2);">
+  <div>PetitsPains</div>
+  <div>
+    <a routerLink="/home">HOME</a>
+    <a>TEAMS</a>
+    <a>MEMBERS</a>
+    <a  mat-button  routerLink="/login">Get start</a>
 
-  <div class="content" role="main">
+  </div>
+</mat-toolbar>
+<div class="content" role="main">
   <router-outlet></router-outlet>
 </div>

@@ -1,25 +1,28 @@
-<div class="jumbotron mt-3" style="background:#f2f2f2; border-radius: 30px;">
-    <h1 class="display-4">Account Signup</h1>
-    <form class="mt-3">
-        <div class="form-row">
-            <div class="col">
-            <input type="text" class="form-control" placeholder="First name">
-            </div>
-            <div class="col">
-            <input type="text" class="form-control" placeholder="Last name">
-            </div>
-        </div>
-        <div class="form-row">
-            <div class="col mt-2">
-                <input type="text" class="form-control" placeholder="Email">
-            </div>
-        </div>
-        <div class="form-row">
-            <div class="col mt-2">
-                <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
-            </div>
-        </div>
-        <button type="submit" class="btn mt-3" style="background: #020202;border-radius: 30px;color:#fff;width: 100%;">Creat Account</button>
-      </form>
-  </div>
-  
+<div style="font-size: 2rem;text-align: center;">Account Login</div>
+
+<mat-card class="my-card" style="background: #fff; margin-top: 2%; border-radius: 30px;">
+    <mat-card-content style="margin-top: 0%;">
+       <form class="my-form" style="color: #000;">
+          <mat-form-field class="full-width">
+             <mat-label style="color: #000;">First Name</mat-label>
+             <input type="text"  matInput  placeholder="First Name" name="email">
+          </mat-form-field>
+          <mat-form-field class="full-width">
+             <mat-label style="color: #000;border-bottom: 1px solid #000;">Last Name</mat-label>
+             <input type="text"  matInput  placeholder="Password" name="password">
+          </mat-form-field>
+          <br>
+          <mat-form-field class="full-width" style="width: 100%;">
+             <mat-label style="color: #000;border-bottom: 1px solid #000;">Email</mat-label>
+             <input type="email"  matInput  placeholder="Password" name="password">
+          </mat-form-field>
+          <br>
+          <mat-form-field class="full-width" style="width: 100%;">
+                <mat-label style="color: #000;border-bottom: 1px solid #000;">Password</mat-label>
+                <input type="password"  matInput  placeholder="Password" name="password">
+            </mat-form-field>    
+            
+       </form>
+       <button mat-raised-button (click)="login()" color="primary" style="width: 100%;margin-top: 2%;">Creat Account</button>
+</mat-card-content>
+ </mat-card>
