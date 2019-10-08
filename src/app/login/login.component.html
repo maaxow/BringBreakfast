@@ -1,15 +1,63 @@
-<h2>Login page</h2>
+<div class="main">
+  <div class="login-wrapper" fxLayout="row" fxLayoutAlign="center center" style="padding:12%;margin-left: 20%;">
 
-<div>
-  <input type="text" placeholder="Username"/>
+    <mat-card class="box">
+      <mat-card-header>
+        <mat-card-title>Log in</mat-card-title>
+      </mat-card-header>
+  
+      <form class="example-form">
+        <mat-card-content>
+          <mat-form-field class="example-full-width">
+            <input matInput placeholder="Username">
+          </mat-form-field>
+  
+          <mat-form-field class="example-full-width">
+            <input type="password" matInput placeholder="Password">
+          </mat-form-field>
+        </mat-card-content>
+        <font>Your not a member ? <a style="color: #062639;text-decoration: none;font-weight: bold" routerLink="/create">Create an account</a></font>
+      
+
+        <button mat-stroked-button color="accent" class="btn-block" style="margin-top: 2%;">Log in</button>
+      </form>
+    </mat-card>
+    
+  </div>
 </div>
-<div>
-  <input tpye="password" placeholder="Password"/>
-</div>
-<div>
-  <button type="submit">Enter</button>
-</div>
-<div>
-  <span>You have not an account ? </span>
-  <a href="#">Create one here</a>
-</div>
+
+
+
+
+
+  <!-- <div style="font-size: 2rem;text-align: center;font-weight: 600;margin-top: 10%;">Account Login</div>
+    <form class="my-form" style="color: #000; margin-top: 5%">
+      <mat-form-field class="full-width" style="width: 100%;">
+          <mat-label style="color: #000;">Username</mat-label>
+            <input  matInput  placeholder="Email" name="email">
+          </mat-form-field>
+      <mat-form-field class="full-width" style="width: 100%;">
+          <mat-label style="color: #000;border-bottom: 1px solid #000;">Password</mat-label>
+            <input type="password"  matInput  placeholder="Password" name="password">
+          </mat-form-field>
+      <button mat-raised-button (click)="login()" color="primary" style="width: 100%;border-radius: 30px;margin-top: 5%;">LOGIN</button>
+    </form>
+     
+  <div style="text-align: center;margin-top: 5%;color: #000;">Not a member? <a routerLink="/create" style="color: #0D47A1;text-decoration: none;">Sign up now</a> </div> -->
+
+  <!-- 
+<div class="jumbotron mt-3" style="background:#f2f2f2; border-radius: 30px;">
+    <h1 class="display-4">Account Login</h1>
+    <form class="mt-4">
+      <div class="form-group">
+        <label for="exampleInputEmail1">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+      </div>
+      <font>Your not a member ? <a style="color: #062639" routerLink="/create">Create an account</a></font>
+      <button type="submit" class="btn mt-2" style="background: #020202;border-radius: 30px;color:#fff;width: 25%;">Login</button>
+    </form>
+  </div> -->
