@@ -112,3 +112,11 @@ body { margin: 0;padding:0;
 
 
 
+.main{
+  background: #DEDEDE;
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+min-height: 100vh;
+font-family: 'Roboto', sans-serif;
+}
