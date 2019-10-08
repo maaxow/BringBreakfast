@@ -1,4 +1,8 @@
-
-    .mat-input-element {
-        caret-color: #000;
-    }
+.main{
+  background-image: url("src/assets/back.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  font-family: 'Roboto', sans-serif;
+}

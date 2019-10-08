@@ -5,16 +5,4 @@
     max-width: 960px;
     flex-direction: column;
     align-items: center;
-}
-  
-
-.navbar{
-    justify-content: space-between;
-}
-
-a{
-    color: #fff;
-    text-decoration: none;
-    padding-right: 1rem;
-    font-size: 1rem;
-}
+}  

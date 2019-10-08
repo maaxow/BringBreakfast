@@ -1,27 +1,51 @@
-<div style="font-size: 2rem;text-align: center;">Account Login</div>
+<div class="main">
+  <div class="login-wrapper" fxLayout="row" fxLayoutAlign="center center" style="padding:12%;">
 
-<mat-card class="my-card" style="background: #fff; margin-top: 2%; border-radius: 30px;">
-    <mat-card-content style="margin-top: 0%;">
-       <form class="my-form" style="color: #000;">
-          <mat-form-field class="full-width">
-             <mat-label style="color: #000;">Enter Username</mat-label>
-             <input  matInput  placeholder="Email" name="email">
+    <mat-card class="box">
+      <mat-card-header>
+        <mat-card-title>Log in</mat-card-title>
+      </mat-card-header>
+  
+      <form class="example-form">
+        <mat-card-content>
+          <mat-form-field class="example-full-width">
+            <input matInput placeholder="Username">
           </mat-form-field>
-          <mat-form-field class="full-width">
-             <mat-label style="color: #000;border-bottom: 1px solid #000;">Enter Password</mat-label>
-             <input type="password"  matInput  placeholder="Password" name="password">
+  
+          <mat-form-field class="example-full-width">
+            <input type="password" matInput placeholder="Password">
           </mat-form-field>
-       </form>
+        </mat-card-content>
+        <font>Your not a member ? <a style="color: #062639;text-decoration: none;font-weight: bold" routerLink="/create">Create an account</a></font>
+      
 
-       <button mat-raised-button (click)="login()" color="primary" style="width: 100%;">LOGIN</button>
+        <button mat-stroked-button color="accent" class="btn-block" style="margin-top: 2%;">Log in</button>
+      </form>
+    </mat-card>
+    
+  </div>
+</div>
 
-       <div style="color: #000; text-align: center;margin-top: 2%;">Not a mamber ? <a routerLink="/create" style="font-weight: bold;text-decoration: none;color: #000">Sign up now</a></div>
-    </mat-card-content>
-    <mat-card-actions>
-    </mat-card-actions>
- </mat-card>
 
-<!-- 
+
+
+
+  <!-- <div style="font-size: 2rem;text-align: center;font-weight: 600;margin-top: 10%;">Account Login</div>
+    <form class="my-form" style="color: #000; margin-top: 5%">
+      <mat-form-field class="full-width" style="width: 100%;">
+          <mat-label style="color: #000;">Username</mat-label>
+            <input  matInput  placeholder="Email" name="email">
+          </mat-form-field>
+      <mat-form-field class="full-width" style="width: 100%;">
+          <mat-label style="color: #000;border-bottom: 1px solid #000;">Password</mat-label>
+            <input type="password"  matInput  placeholder="Password" name="password">
+          </mat-form-field>
+      <button mat-raised-button (click)="login()" color="primary" style="width: 100%;border-radius: 30px;margin-top: 5%;">LOGIN</button>
+    </form>
+     
+  <div style="text-align: center;margin-top: 5%;color: #000;">Not a member? <a routerLink="/create" style="color: #0D47A1;text-decoration: none;">Sign up now</a> </div> -->
+
+  <!-- 
 <div class="jumbotron mt-3" style="background:#f2f2f2; border-radius: 30px;">
     <h1 class="display-4">Account Login</h1>
     <form class="mt-4">
