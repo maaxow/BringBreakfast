@@ -21,3 +21,15 @@ A member can access to the app via a login page.
 
 On Team page, it show (in big ?) the next breakfast date, and who bring it (like a message like : "{{name}} offer you a breakfast next friday !!"). 
 Under this message, there is a table with all breakfasts dates and member linked.
+
+
+# Technical Specifications
+
+## Front end
+- Angular 8 for the front engine
+- Material Design for CSS style
+
+## Back end
+- Java
+- Spring
+- Postgresql
